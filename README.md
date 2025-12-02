@@ -1,4 +1,4 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# 欢迎来看我的高数课件 [Slidev](https://hustabubu.github.io/adv-math/)!
 
 To start the slide show:
 
@@ -8,4 +8,7 @@ To start the slide show:
 
 Edit the [slides.md](./slides.md) to see the changes.
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+使用的是 Slidev 来制作，并增加了一些自己的组件，部分记录看 `制作笔记.md`
+
+更多的使用看 Slidev 官网
+
