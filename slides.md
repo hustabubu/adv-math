@@ -26,6 +26,7 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
+contextMenu: dev
 ---
 
 # 高等数学
@@ -61,10 +62,59 @@ hideInToc: true
 
 
 ---
-src: ./pages/chapter07.md
+src: ./pages/chapter01.md
+---
+
+第一章插入页
+
+---
+src: ./pages/chapter02.md
+---
+
+第二章插入页
+
+---
+src: ./pages/chapter03.md
+---
+
+第三章插入页
+
+---
+src: ./pages/chapter04.md
+---
+
+第四章插入页
+
+---
+src: ./pages/chapter05.md
+---
+
+第五章插入页
+
+---
+# src: ./pages/chapter07.md
 ---
 
 第七章插入页
+
+---
+# src: ./pages/chapter08.md
+---
+
+第八章插入页
+
+---
+# src: ./pages/chapter09.md
+---
+
+第九章插入页
+
+---
+src: ./pages/chapter12.md
+---
+
+第十二章插入页
+
 
 ---
 layout: end

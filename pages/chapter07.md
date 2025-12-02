@@ -655,7 +655,7 @@ $$y=x^3+3x+C_2,$$
 </v-click>
 <v-click>
 
-所以所求通解为
+所以所求特解为
 $$y=x^3+3x+1.$$
 </v-click>
 
@@ -916,7 +916,6 @@ $$L(k_1f_1+k_2f_2)=k_1Lf_1+k_2Lf_2.$$
 ---
 layout: two-cols
 layoutClass: gap-10
-level: 3
 ---
 
 ### 7.6.1.齐次线性方程解的结构
@@ -998,7 +997,6 @@ $u(x),v(x)$ 都是方程 $Ly=0$ 的解。
 ---
 layout: two-cols
 layoutClass: gap-10
-level: 3
 ---
 
 ### 7.6.2.非齐次线性方程解的结构
@@ -1092,8 +1090,6 @@ $(1)+(2)$ 得
  $$L(y_1+y_2)=f_1(x)+f_2(x)$$
 </v-click>
 
----
-level: 2
 ---
 
 ## 7.7.二阶常系数齐次线性微分方程
@@ -1235,8 +1231,6 @@ $\Longleftrightarrow$ <span v-mark.box.yellow="7">$r$</span> 是代数方程 $P(
 </Admonition>
 
 ---
-level: 3
----
 
 ### 7.7.1.通解公式的推导
 
@@ -1351,8 +1345,6 @@ $u(x),v(x)$ 都是方程 $Ly=0$ 的解。
 </v-click>
 
 ---
-level: 3
----
 
 ### 7.7.2.通解公式
 
@@ -1379,14 +1371,13 @@ level: 3
 ---
 layout: two-cols
 layoutClass: gap-10
-level: 4
----
-#### 例子
 
-**例 1** 求 $y''-2y'-3y=0$ 的解。
+**例子**
+
+**例 1** 求 $y''-2y'+3y=0$ 的解。
 <v-click at='1'>
 
-**解**：特征方程：$r^2-2r-3=0$，
+**解**：特征方程：$r^2-2r+3=0$，
 </v-click>
 
 <span v-click='2'>特征根：$r_1=1$，$r_1=3$，</span>
@@ -1434,7 +1425,6 @@ level: 4
 ---
 layout: two-cols
 layoutClass: gap-10
-level: 2
 ---
 
 ## 7.8.二阶常系数非齐次线性微分方程
@@ -1484,8 +1474,6 @@ $\rightarrow$ 由“形状” 求具体表达式（**待定系数法**）。
 </v-click>
 
 ---
-level: 3
----
 
 ### 7.8.1常见的非齐次项的“形状”
 
@@ -1520,8 +1508,6 @@ $$\mathrm{e}^{i\theta}=\cos\theta+i\sin\theta$$
 3. 其它变化的形式：通过适当的叠加、组合转化成 <kbd>1</kbd>
 </v-click>
 
----
-level: 3
 ---
 
 ### 7.8.2.非齐特解形式的推导
@@ -1588,8 +1574,6 @@ r_1r_2=q
 </Admonition>
 
 ---
-level: 3
----
 
 ### 7.8.3.非齐特解形式公式
 $$y''+py'+qy=\mathrm{e}^{\lambda x}P_m(x)$$
@@ -1610,10 +1594,7 @@ $2$ 重根
 ---
 layout: two-cols
 layoutClass: gap-10
-level: 4
 ---
-
-#### 例子
 
 **例 1** 写出微分方程 $y''-2y'-3y=f(x)$ 的特解形式，其中
 (1) $f(x)=3x+1$，

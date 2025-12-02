@@ -34,7 +34,7 @@ export default {
         // 如果在标签内绑定的latexTex值没有变化，直接return，没必要执行latex公式的自动渲染
         if(binding.oldValue === binding.value) {
           // 如果真实DOM用的是v-model，则再加上指令修饰符`.trim`就可以去掉头尾空字符
-          console.log("Latex 公式未改变");
+          // console.log("Latex 公式未改变");
           return
         }
         // console.log('@@@',binding.oldValue);
@@ -82,7 +82,7 @@ export default {
         // console.log(elBefore===elAfter);
 
         renderMathInElement(el, renderOption);
-        console.log("updated 时，公式被重新渲染了");
+        // console.log("updated 时，公式被重新渲染了");
       }
     })
   }
