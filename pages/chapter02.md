@@ -273,7 +273,7 @@ $$
 </v-click>
 
 <details  v-click='7'>
-  <summary ><Akatex inline=true content="$(\log_a x)'=\frac{1}{x\ln a} \, (a>0,a\neq 1)$"></Akatex></summary>
+  <summary ><Akatex inline=true content="$\displaystyle (\log_a x)'=\frac{1}{x\ln a} \, (a>0,a\neq 1)$"></Akatex></summary>
 $$
 \begin{align*}
 (\log_a x)'&=\lim_{h \to 0}\frac{\log_a(x+h)-\log_a x}{h}\\
@@ -286,7 +286,7 @@ $$
 
 <v-click at='8'>
 
-- $(\ln x)'=\frac{1}{x}$
+- $\displaystyle (\ln x)'=\frac{1}{x}$
 </v-click>
 
 ---

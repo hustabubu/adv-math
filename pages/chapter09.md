@@ -220,25 +220,112 @@ layoutClass: gap-10
 ### 7.6.3.空间曲面的切平面与法线
 
 ---
-layout: two-cols
-layoutClass: gap-10
+layout: section
+routeAlias: gradient
 ---
 
 ## 7.7.方向导数与梯度
 
----
-layout: two-cols
-layoutClass: gap-10
----
+**方向导数：沿着指定方向的函数变化率**
 
-### 7.7.1.方向导数
+**梯度（gradient）：最“陡”的"坡度"**
 
 ---
 layout: two-cols
 layoutClass: gap-10
 ---
 
-### 7.7.2.梯度
+**梯度无处不在！不可不知！**
+
+<v-clicks at="1">
+
+- **[风的形成](https://bkimg.cdn.bcebos.com/pic/4a36acaf2edda3cc6402d11f05e93901213f922e?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080)：** 水平**气压梯度**驱动大气的水平运动，形成风；
+风的方向：**高**气压 → **低**气压
+
+- **物质的扩散：** **浓度梯度** 是物质从高浓度区域向低浓度区域自发移动的驱动力；
+扩散方向：**高**浓度 → **低**浓度
+
+- **温度梯度、电势梯度、磁场梯度……**
+
+</v-clicks>
+
+::right::
+
+<span v-click="4">**注意：**</span>
+
+<v-clicks at="4">
+
+1. **“势能”** → **“其它能量”**；
+2. 实际问题梯度的正方向：**高 → 低**，**"势能"减少最快的方向**;
+3. 数学上的梯度正方向：**低 → 高**；**函数增加最快的方向**。
+
+</v-clicks>
+
+---
+layout: two-cols
+layoutClass: gap-10
+---
+
+**问题：**
+
+<v-clicks at="1">
+
+1. 山上的一块石头，怎么滚落到山下？
+2. 如何上山？
+3. 如何证明你在山顶？
+4. ...
+</v-clicks>
+
+<span v-click='5'>总而言之，是二元函数**变化（率）的问题**。</span>
+
+<span v-click='6'>所以，先考虑接下来两个问题：</span>
+
+<v-clicks at="7">
+
+1. 导数是否需要有方向？
+2. 如何给导数赋予方向？
+</v-clicks>
+
+<v-click at="9">
+
+[一元函数导数赋予方向]()
+</v-click>
+
+<v-click at="10">
+
+给导数赋予方向：**（使得）函数增加的方向为正向**
+</v-click>
+
+::right::
+
+<RenderWhen context="visible">
+
+![山与等高线](https://ts3.tc.mm.bing.net/th/id/OIP-C.imxhNKI6BZ_crs_9gH8LLgHaGM?rs=1&pid=ImgDetMain&o=7&rm=3)
+
+</RenderWhen>
+
+<v-click at="11">
+
+**“箭头汇聚的地方”**：极大值点；
+
+**“箭头远离的地方”**：极小值点。
+</v-click>
+
+---
+layout: two-cols
+layoutClass: gap-10
+---
+
+### 7.7.1.梯度
+
+[二元函数偏导数赋予方向]()
+
+---
+layout: two-cols
+layoutClass: gap-10
+---
+
+### 7.7.2.方向导数
 
 
 ---
@@ -248,6 +335,9 @@ layoutClass: gap-10
 
 ## 7.8.多元函数的极值
 
+要搞清楚函数的极值，首先得搞清楚**函数是如何随着自变量的变化而变化**。
+
+<Link to="gradient" title="跳转到梯度"/>
 
 ---
 layout: two-cols
@@ -257,9 +347,17 @@ layoutClass: gap-10
 ### 7.8.1.自由极值
 
 
+
 ---
 layout: two-cols
 layoutClass: gap-10
 ---
 
 ### 7.8.2.条件极值
+
+---
+layout: two-cols
+layoutClass: gap-10
+---
+
+

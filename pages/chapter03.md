@@ -283,7 +283,7 @@ layoutClass: gap-10
 
 <v-click at='6'>
 
-**例 2** 设 $f(x)$ 在 $[0,a]$ 上连续，在 $(0,a)$ 内可导，且 $f(a)=0$，证明：$\exist\, \xi\in(a,b)$ 使
+**例 2** 设 $f(x)$ 在 $[0,a]$ 上连续，在 $(0,a)$ 内可导，且 $f(a)=0$，证明：$\exist\, \xi\in(0,a)$ 使
 $$f(\xi)+\xi f'(\xi)=0.$$
 </v-click>
 
@@ -300,7 +300,7 @@ $$F(0)=0=F(a).$$
 
 <v-click at='10'>
 
-由罗尔中值定理，$\exist\, \xi\in(a,b)$ 使 $F'(\xi)=0$，
+由罗尔中值定理，$\exist\, \xi\in(0,a)$ 使 $F'(\xi)=0$，
 </v-click>
 
 <v-click at='11'>
@@ -522,7 +522,7 @@ layoutClass: gap-10
 
 <span v-click='3'>**例 4**$\displaystyle \lim_{x\to+\infty}\frac{x^4}{\mathrm{e}^{3x}}$</span>
 <span v-click='4'>$\displaystyle =\lim_{x\to+\infty}\frac{4x^3}{3\mathrm{e}^{3x}}$</span>
-<span v-click='5'>$\displaystyle =\lim_{x\to+\infty}\frac{4\cdot 3x^3}{3^2\mathrm{e}^{3x}}$</span>
+<span v-click='5'>$\displaystyle =\lim_{x\to+\infty}\frac{4\cdot 3x^2}{3^2\mathrm{e}^{3x}}$</span>
 
 <span v-click='6'>$\displaystyle =\cdots$</span>
 <span v-click='6'>$\displaystyle =\lim_{x\to+\infty}\frac{4!}{3^4\mathrm{e}^{3x}}=0.$</span>
@@ -943,7 +943,7 @@ $$
 <Admonition title='注意' admonitionType='warning' v-click='3'>
 <v-clicks at='3'>
 
-1. $(x-x_0)^{\color{red}k}$ 的<span v-mark.red='3'>**系数**</span> $a_{\color{red}k}$ $\xleftrightarrow{\color{orange}1-1 对应}$ <span v-mark.red='3'>**高阶导数**</span> $f^{({\color{red}k})}(x_0)$：<span v-mark.red='3'>$\displaystyle a_{\color{red}k}=\frac{f^{({\color{red}k})}(x_0)}{ {\color{red}k}!}$</span>;
+1. $(x-x_0)^{\color{red}k}$ 的<span v-mark.red='3'>**系数**</span> $a_{\color{red}k}$ $\xleftrightarrow{\color{orange}1-1 对应}$ <span v-mark.red='3'>**高阶导数**</span> $f^{({\color{red}k})}(x_0)$：$\displaystyle a_{\color{red}k}=\frac{f^{({\color{red}k})}(x_0)}{ {\color{red}k}!}$;
 2. 点 $x_0$ 是泰勒公式的**中心点**。
 </v-clicks>
 </Admonition>
@@ -1068,7 +1068,7 @@ $$
 
  $(x-x_0)^{\color{red}k}$ <span v-mark.red.box='1'>**系数**</span> $a_{\color{red}k}$ $\xleftrightarrow{\color{orange}1-1 对应}$ <span v-mark.red.box='1'>**高阶导数**</span> $f^{({\color{red}k})}(x_0)$
  
- <span v-mark.red.box='1'>$a_{\color{red}k}=\frac{f^{({\color{red}k})}(x_0)}{ {\color{red}k}!}$</span>.
+ $$a_{\color{red}k}=\frac{f^{({\color{red}k})}(x_0)}{ {\color{red}k}!}.$$
 </Admonition>
 
 <v-click at='6'>

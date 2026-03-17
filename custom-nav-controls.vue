@@ -1,4 +1,4 @@
-<!-- custom-nav-controls -->
+custom-nav-controls
 <template>
   <VerticalDivider />
   <IconButton title="magnifier" @click="toggleMagnifier">

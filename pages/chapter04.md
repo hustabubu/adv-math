@@ -47,7 +47,7 @@ layoutClass: gap-10
 设 $f(x)$ 是定义在区间 $I$ 上的函数，若存在函数 $F(x)$，使得对 $\forall x \in I$ 都有
 <div text-center>
 
-<span v-mark.box.red='0'>$F'(x)=f(x)$</span> 或 <span v-mark.box.red='0'>$\mathrm{d}F(x)=f(x)\mathrm{d}x$</span>，
+<span v-mark.box.red='0'>$F'(x)=f(x)$</span> 或 <span v-mark.box.red='0'>$\mathrm{d}F(x)=f(x)\,\mathrm{d}x$</span>，
 </div>
 
 则称函数 $F(x)$ 为 $f(x)$ 在区间 $I$ 上的**原函数**。
@@ -113,7 +113,7 @@ layoutClass: gap-10
 <hr>
 
 **定义：** 在区间 $I$ 上，把 **$f(x)$ 的所有原函数**称为 $f(x)$ 的**不定积分**，记为
-$$\int f(x)\mathrm{d}x,$$
+$$\int f(x)\,\mathrm{d}x,$$
 </v-click>
 
 <v-click at='4'>
@@ -131,7 +131,7 @@ $$\int f(x)\mathrm{d}x,$$
 
 <v-click at='6'>
 
-$$\int f(x)\mathrm{d}x=F(x)+C$$
+$$\int f(x)\,\mathrm{d}x=F(x)+C$$
 就表示了 $f(x)$ 的所有原函数。
 </v-click>
 
@@ -148,15 +148,15 @@ $$\int f(x)\mathrm{d}x=F(x)+C$$
 | :---: | :--------------------------------------: | :----------: | :-------: | :------------------------------------: |
 | 求导  | $\displaystyle\frac{\mathrm{d}}{\mathrm{d}x}(\cdot):$ | 可导函数集合 | $\mapsto$ |                函数集合                |
 |       | $\displaystyle\frac{\mathrm{d}}{\mathrm{d}x}(\cdot):$ |    $f(x)$    | $\mapsto$ | $\displaystyle\frac{\mathrm{d}}{\mathrm{d}x}(f(x))$ |
-| 积分  |        $\displaystyle\int(\cdot)\mathrm{d}x:$         | 可积函数集合 | $\mapsto$ |                函数集合                |
-|       |        $\displaystyle\int(\cdot)\mathrm{d}x:$         |    $f(x)$    | $\mapsto$ |         $\displaystyle\int f(x)\mathrm{d}x$         |
+| 积分  |        $\displaystyle\int(\cdot)\,\mathrm{d}x:$         | 可积函数集合 | $\mapsto$ |                函数集合                |
+|       |        $\displaystyle\int(\cdot)\,\mathrm{d}x:$         |    $f(x)$    | $\mapsto$ |         $\displaystyle\int f(x)\,\mathrm{d}x$         |
 
 ---
 layout: two-cols
 layoutClass: gap-10
 ---
 
-**例 1** 求不定积分 (1) $\displaystyle\int 3x^2\mathrm{d}x$， (2) $\displaystyle \int \frac{1}{x}\mathrm{d}x$.
+**例 1** 求不定积分 (1) $\displaystyle\int 3x^2\,\mathrm{d}x$， (2) $\displaystyle \int \frac{1}{x}\,\mathrm{d}x$.
 
 <span v-click='1'>**解：** (1) 因为 $(x^3)'=3x^2$，</span>
 <span v-click='2'>所以 $x^3$ 是 $3x^2$ 的一个原函数，</span>
@@ -164,16 +164,16 @@ layoutClass: gap-10
 
 <v-click at='3'>
 
-$$\int 3x^2\mathrm{d}x=x^3+C.$$
+$$\int 3x^2\,\mathrm{d}x=x^3+C.$$
 </v-click>
 
-<span v-click='4'>(2) 因为 $(\ln|x|)'=\frac{1}{x}$，</span>
-<span v-click='5'>所以 $\ln|x|$ 是 $\frac{1}{x}$ 的一个原函数，</span>
+<span v-click='4'>(2) 因为 $\displaystyle (\ln|x|)'=\frac{1}{x}$，</span>
+<span v-click='5'>所以 $\ln|x|$ 是 $\displaystyle \frac{1}{x}$ 的一个原函数，</span>
 <span v-click='6'>因此</span>
 
 <v-click at='6'>
 
-$$\int \frac{1}{x}\mathrm{d}x=\ln|x|+C.$$
+$$\int \frac{1}{x}\,\mathrm{d}x=\ln|x|+C.$$
 </v-click>
 
 ::right::
@@ -219,13 +219,13 @@ $(1)$ $F(x)$ 是 $f(x)$ 的其中一个原函数；
 
 $\iff$ $(2)$ $f(x)=F'(x)$;
 
-$\iff$ $(3)$ $\displaystyle\int f(x)\mathrm{d}x=F(x)+C$;
+$\iff$ $(3)$ $\displaystyle\int f(x)\,\mathrm{d}x=F(x)+C$;
 </v-clicks>
 </Admonition>
 
 <Admonition title='求导与积分的关系 I' admonitionType='warning' v-click='4'>
 
-$$\left[\int f(x)\mathrm{d}x\right]'=f(x).\tag{4}$$
+$$\left[\int f(x)\,\mathrm{d}x\right]'=f(x).\tag{4}$$
 
 <span v-mark.red='6' v-click='6'>1. 常用于<mark>检验不定积分的正确性</mark>，**非常重要**；</span>
 
@@ -236,12 +236,12 @@ $$\left[\int f(x)\mathrm{d}x\right]'=f(x).\tag{4}$$
 
 <v-click at='5'>
 
-$$f(x)\xrightarrow{积分}\int f(x)\mathrm{d}x\xrightarrow{求导} f(x).$$
+$$f(x)\xrightarrow{积分}\int f(x)\,\mathrm{d}x\xrightarrow{求导} f(x).$$
 </v-click>
 
 <Admonition title='求导与积分的关系 II' admonitionType='warning' v-click='8'>
 
-$$\int f'(x)\mathrm{d}x=f(x)+C.\tag{5}$$
+$$\int f'(x)\,\mathrm{d}x=f(x)+C.\tag{5}$$
 </Admonition>
 
 <v-click at='9'>
@@ -251,7 +251,7 @@ $$f(x)\xrightarrow{求导}f'(x)\xrightarrow{积分} f(x)+C.$$
 
 <Admonition title='微分和积分的关系' admonitionType='warning' v-click='10'>
 
-$$\mathrm{d}\left[\int f(x)\mathrm{d}x\right]=f(x)\mathrm{d}x,$$
+$$\mathrm{d}\left[\int f(x)\,\mathrm{d}x\right]=f(x)\,\mathrm{d}x,$$
 $$\int \mathrm{d}f(x)=f(x)+C.$$
 </Admonition>
 
@@ -283,20 +283,20 @@ $$(x\sin x+\cos x)'=\sin x+x\cos x-\sin x=x\cos x.$$
 **不定积分满足线性运算**
 
 若 $f(x)$ 和 $g(x)$ 都是可积的，则
-1. $\displaystyle\int[f(x)+g(x)]\mathrm{d}x=\int f(x)\mathrm{d}x+\int g(x)\mathrm{d}x$,
-2. $\displaystyle\int k f(x)\mathrm{d}x=k\int f(x)\mathrm{d}x$.
+1. $\displaystyle\int[f(x)+g(x)]\,\mathrm{d}x=\int f(x)\,\mathrm{d}x+\int g(x)\,\mathrm{d}x$,
+2. $\displaystyle\int k f(x)\,\mathrm{d}x=k\int f(x)\,\mathrm{d}x$.
 
 <span v-click='1'>**证：**</span>
 $${hide|1|1-2}{at:1}
 \begin{align*}
-\left[\int f(x)\mathrm{d}x+\int g(x)\mathrm{d}x\right]'&=\left[\int f(x)\mathrm{d}x\right]'+\left[\int g(x)\mathrm{d}x\right]'\\
+\left[\int f(x)\,\mathrm{d}x+\int g(x)\,\mathrm{d}x\right]'&=\left[\int f(x)\,\mathrm{d}x\right]'+\left[\int g(x)\,\mathrm{d}x\right]'\\
 &=f(x)+g(x).
 \end{align*}
 $$
 
 $${hide|1|1-2}{at:3}
 \begin{align*}
-\left[k\int f(x)\mathrm{d}x\right]'&=k\left[\int f(x)\mathrm{d}x\right]'\\
+\left[k\int f(x)\,\mathrm{d}x\right]'&=k\left[\int f(x)\,\mathrm{d}x\right]'\\
 &=k f(x).
 \end{align*}
 $$
@@ -337,7 +337,7 @@ layoutClass: gap-10
 
 **直接积分法：** 恒等变形（化成<span v-mark.red='1'>和积分公式一样</span>），套公式.
 
-<span v-click='1'>**例 4** 求 $\displaystyle\int(2^x\mathrm{e}^x-\cos x)\mathrm{d}x$.</span>
+<span v-click='1'>**例 4** 求 $\displaystyle\int(2^x\mathrm{e}^x-\cos x)\,\mathrm{d}x$.</span>
 
 <span v-click='2'>$\displaystyle\int(2^x\mathrm{e}^x-\cos x)\mathrm{d}x=\int(2\mathrm{e})^x\mathrm{d}x-\int\cos x\mathrm{d}x$</span>
 
@@ -357,11 +357,11 @@ $=\frac{(2\mathrm{e})^x}{\ln(2\mathrm{e})}-\sin x+(C_1-C_2)$
 
 ::right::
 
-<span v-click='7'>**例 5** 求 $\displaystyle\int \sqrt{x}(x^2-5)\mathrm{d}x$.</span>
+<span v-click='7'>**例 5** 求 $\displaystyle\int \sqrt{x}(x^2-5)\,\mathrm{d}x$.</span>
 
 $${hide|1|1-2|1-3}{at:8}
 \begin{align*}
-&\int \sqrt{x}(x^2-5)\mathrm{d}x\\
+&\int \sqrt{x}(x^2-5)\,\mathrm{d}x\\
 =&\int\left(x^{\frac{5}{2}}-5x^{\frac{1}{2}}\right)\mathrm{d}x=\int x^{\frac{5}{2}}\,\mathrm{d}x-5\int x^{\frac{1}{2}}\,\mathrm{d}x \\
 =&\frac{2}{7}x^{\frac{7}{2}}-\frac{10}{3}x^{\frac{3}{2}}+C.
 \end{align*}
@@ -384,7 +384,7 @@ $${hide|1|1-2|1-3|1-4}{at:1}
 &\int \frac{1}{\sin^2 x\cos^2 x}\mathrm{d}x\\
 =&\int \frac{\sin^2 x+\cos^2 x}{\sin^2 x\cos^2 x}\mathrm{d}x\\
 =&\int \left(\frac{1}{\cos^2 x}+\frac{1}{\sin^2 x}\right)\mathrm{d}x\\
-=&\tan x+\cot x+C.
+=&\tan x-\cot x+C.
 \end{align*}
 $$
 
@@ -458,8 +458,8 @@ layoutClass: gap-10
 ---
 
 **第一换元法的证明**
-$$\int f[\varphi(x)]\varphi'(x)\mathrm{d}x\xlongequal{u=\varphi(x)}
-\left[\int f(u)\mathrm{d}u\right]_{u=\varphi(x)}.$$
+$$\int f[\varphi(x)]\varphi'(x)\,\mathrm{d}x\xlongequal{u=\varphi(x)}
+\left[\int f(u)\,\mathrm{d}u\right]_{u=\varphi(x)}.$$
 
 
 <span v-click='1'>记 $F(u)$ 是 $f(u)$ 的原函数，</span>
@@ -502,7 +502,7 @@ $$
 <span v-click='5'>**例 2** $\displaystyle\int\mathrm{e}^{-x}\,\mathrm{d}x$.</span>
 
 $${hide|1}{at:6}
-\int\mathrm{e}^{-x}\,\mathrm{d}x=-\int\mathrm{e}^{-x}\,\mathrm{d}(-x)=\mathrm{e}^{-x}+C.
+\int\mathrm{e}^{-x}\,\mathrm{d}x=-\int\mathrm{e}^{-x}\,\mathrm{d}(-x)=-\mathrm{e}^{-x}+C.
 $$
 
 ---
@@ -528,7 +528,7 @@ $$
 ::right::
 
 <span v-click='5'>**例 4** $\displaystyle\int\frac{\mathrm{d}x}{x(1+2\ln x)}$.</span>
-<span class='text-orange' v-click='6'> ($\displaystyle\frac{\mathrm{d}x}{x}=\mathrm{d}(\ln x)$)</span>
+<span class='text-orange' v-click='6'> $\displaystyle\left(\frac{\mathrm{d}x}{x}=\mathrm{d}(\ln x)\right)$</span>
 
 $${hide|1|1-2}{at:7}
 \begin{align*}
@@ -1170,11 +1170,11 @@ layoutClass: gap-10
 </div>
 </div>
 
-<span v-click='10'>由 $\displaystyle\tan t=\frac{x-2}{3}$，得 $\displaystyle\sec t=\frac{\sqrt{x^2-4x+13}}{3}$.</span>
+<span v-click='10'>由 $\displaystyle\tan t=\frac{x-2}{3}$，得 $\displaystyle \sec t=\frac{\sqrt{x^2-4x+13}}{3}$.</span>
 
 ::right::
 
-<span v-click='6'>**解：** 设 $x-2=3\tan t$ $\displaystyle\left(-\frac{\pi}{2}<t<\frac{\pi}{2}\right)$，</span>
+<span v-click='6'>**解：** 设 $x-2=3\tan t$ $\displaystyle \left(-\frac{\pi}{2} < t < \frac{\pi}{2}\right)$，</span>
 
 <span v-click='7'>则 $\mathrm{d}x=3\sec^2 t\,\mathrm{d}t$，</span>
 <span v-click='8'>于是</span>
@@ -1221,7 +1221,7 @@ layoutClass: gap-10
     </span>
   </foreignObject>
 
-  <foreignObject x="220" y="50" width="75" height="20">
+  <foreignObject x="220" y="50" width="75" height="20" >
     <span xmlns="http://www.w3.org/1999/xhtml">
       <Akatex :inline='true' content='$\footnotesize \sqrt{x^2-a^2}$' />
     </span>
@@ -1246,7 +1246,7 @@ layoutClass: gap-10
 
 <span v-click='5'>**解：** 只需讨论 $x>a$ 情形，当 $x<-a$ 时，可通过 $x=-u$ 化为前一情形。</span>
 
-<span v-click='6'>设 $x=a\sec t$ $\displaystyle\left(0<t<\frac{\pi}{2}\right)$，</span>
+<span v-click='6'>设 $x=a\sec t$ $\displaystyle\left(0< t <\frac{\pi}{2}\right)$，</span>
 
 <span v-click='7'>则 $\mathrm{d}x=a\sec t\tan t\,\mathrm{d}t$，</span>
 <span v-click='8'>于是</span>
@@ -1309,8 +1309,8 @@ $$\int uv'\mathrm{d}x=uv-\int vu'\mathrm{d}x$$
 
 <v-clicks at='9'>
 
-- <span class='text-blue'>**反三角**</span>函数，如：$(\arctan x)'=\frac{1}{1+x^2}$
-- <span class='text-blue'>**对数**</span>函数，如：$(\ln x)'=\frac{1}{x}$
+- <span class='text-blue'>**反三角**</span>函数，如：$\displaystyle (\arctan x)'=\frac{1}{1+x^2}$
+- <span class='text-blue'>**对数**</span>函数，如：$\displaystyle (\ln x)'=\frac{1}{x}$
 - 正整数次<span class='text-blue'>**幂**</span>函数，如：$(x^n)'=nx^{n-1}$
 
 </v-clicks>
@@ -1320,8 +1320,8 @@ $$\int uv'\mathrm{d}x=uv-\int vu'\mathrm{d}x$$
 
 <v-clicks at='13'>
 
-- <span class='text-blue'>**三角**</span>函数，如：$\int\cos x \mathrm{d}x=\sin x+C$
-- <span class='text-blue'>**指数**</span>函数，如：$\int\mathrm{e}^x\mathrm{d}x=\mathrm{e}^x+C$
+- <span class='text-blue'>**三角**</span>函数，如：$\displaystyle \int\cos x \mathrm{d}x=\sin x+C$
+- <span class='text-blue'>**指数**</span>函数，如：$\displaystyle \int\mathrm{e}^x\mathrm{d}x=\mathrm{e}^x+C$
 </v-clicks>
 </Admonition>
 
@@ -1470,12 +1470,12 @@ layout: two-cols
 layoutClass: gap-10
 ---
 
-**例 9** 已知 <span v-mark.blue='1'>$\displaystyle\frac{\sin x}{x}$ 是 $f(x)$ 的一个原函数</span>，求 $\displaystyle\int x^3f'(x)\mathrm{d}x$.
+**例 9** 已知 <span v-mark.blue='1'>$\displaystyle\frac{\sin x}{x}$ 是 $f(x)$ 的一个原函数</span>，求 $\displaystyle\int x^3f'(x)\,\mathrm{d}x$.
 
 $${hide|1|1-2|1-3|1-4|1-5}{at:4}
 \begin{align*}
-&\int x^3f'(x)\mathrm{d}x=\int x^3\mathrm{d}f(x)\\
-=&x^3f(x)-3\int x^2f(x)\mathrm{d}x\\
+&\int x^3f'(x)\,\mathrm{d}x=\int x^3\,\mathrm{d}f(x)\\
+=&x^3f(x)-3\int x^2f(x)\,\mathrm{d}x\\
 =&x^2\cos x-x\sin x-3\int x^2\,\mathrm{d}\left(\frac{\sin x}{x}\right)\\
 =&x^2\cos x-x\sin x-3\left(x^2\cdot \frac{\sin x}{x}-\int \frac{\sin x}{x}\cdot 2x\,\mathrm{d}x\right)\\
 =&x^2\cos x-4x\sin x-6\cos x+C.
@@ -1487,9 +1487,9 @@ $$
 <span class='text-blue' v-click='1'>$\displaystyle\iff f(x)=\left(\frac{\sin x}{x}\right)'$</span>
 <span v-click='3'>$\displaystyle=\frac{x\cos x-\sin x}{x^2}$.</span>
 
-<span class='text-blue' v-click='2'>$\displaystyle\iff \int f(x)\mathrm{d}x=\frac{\sin x}{x}+C$.</span>
+<span class='text-blue' v-click='2'>$\displaystyle\iff \int f(x)\,\mathrm{d}x=\frac{\sin x}{x}+C$.</span>
 
-<span class='text-blue' v-click='6'>$\displaystyle\iff f(x)\mathrm{d}x=\mathrm{d}\left(\frac{\sin x}{x}\right)$.</span>
+<span class='text-blue' v-click='6'>$\displaystyle\iff f(x)\,\mathrm{d}x=\mathrm{d}\left(\frac{\sin x}{x}\right)$.</span>
 
 ---
 layout: center

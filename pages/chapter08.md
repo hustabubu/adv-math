@@ -9,6 +9,8 @@ layoutClass: gap-10
 
 ## 8.1.向量
 
+<RenderWhen context="visible">
+
 三维空间的**点 $M$**、**向量**和**三个有序数** **$1-1$ 对应**:
 
 $$M\leftrightarrow\bm{r}=x\bm{i}+y\bm{j}+z\bm{k}\leftrightarrow(x,y,z)$$
@@ -20,6 +22,12 @@ $$M\leftrightarrow\bm{r}=x\bm{i}+y\bm{j}+z\bm{k}\leftrightarrow(x,y,z)$$
 点 $A(x_1,y_1,z_1)$ 和点 $B(x_2,y_2,z_2)$ 之间的距离 
 $$|\overrightarrow{AB}|=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$$
 
+</RenderWhen>
+
 ::right::
 
 <!-- <iframe scrolling="no" title="方向余弦" src="https://www.geogebra.org/material/iframe/id/ck9u2ceq/width/850/height/600/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/true/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="450px" height="422px" style="border:0px;"> </iframe> -->
+
+
+---
+
