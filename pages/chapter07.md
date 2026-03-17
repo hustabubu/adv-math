@@ -1,12 +1,10 @@
-
 # 7.微分方程
 
-<Toc columns="2" minDepth="2" maxDepth="3" mode="onlyCurrentTree"></Toc>
+<Toc text-sm columns="2" minDepth="2" maxDepth="3" mode="onlyCurrentTree"></Toc>
 
 ---
 layout: two-cols
 layoutClass: gap-10
-transition: fade-out
 ---
 
 ## 7.1.什么是微分方程？
@@ -118,8 +116,6 @@ Here is another comment.
 -->
 
 ---
-level: 4
----
 
 **通解一定是方程的全部解吗？**
 
@@ -145,7 +141,6 @@ $y=C$ 是通解，但不包含解 $y=x$。
   $$\frac{\mathrm{d}y}{\mathrm{d}x}+P(x)y=Q(x)$$
 
 ---
-level: 3
 layout: two-cols
 layoutClass: gap-10
 ---
@@ -224,7 +219,6 @@ $$\ln|y|=x^2+\ln|C|,$$
 <arrow x1="500" y1="300" x2="320" y2="450" color="#953" width="2" arrowSize="1"  v-click='5'/>
 
 ---
-level: 3
 layout: two-cols
 layoutClass: gap-10
 ---
@@ -302,13 +296,11 @@ $$\sin \frac{y}{x}=Cx.$$
 </v-click>
 
 ---
-level: 3
----
 
 ### 7.4.一阶线性微分方程
 
 <div class="grid grid-cols-[400px_1fr] gap-10">
-  <div >
+  <div>
 
   齐次：<span ml-20>$\frac{\mathrm{d}y}{\mathrm{d}x}+P(x)y=0$,</span>
 
@@ -332,8 +324,6 @@ level: 3
 非齐次：<span ml-15>$y=\mathrm{e}^{-\int P(x)\mathrm{d}x}\left[C+\int Q(x)\mathrm{e}^{\int P(x)\mathrm{d}x}\mathrm{d}x\right]$</span>
 </Admonition>
 
----
-level: 4
 ---
 
 #### 一阶线性齐次方程的公式的推导
@@ -359,7 +349,6 @@ $$y=C\mathrm{e}^{-\int P(x)\mathrm{d}x}.$$
 ---
 layout: two-cols
 layoutClass: gap-10
-level: 4
 ---
 
 #### 一阶线性非齐次方程的公式的推导
@@ -493,8 +482,6 @@ $$
 </Admonition>
 
 ---
-level: 2
----
 
 ## 7.5.可降阶微分方程
 
@@ -505,12 +492,12 @@ level: 2
 - 不显含自变量 $x$
 
 ---
-level: 3
 layout: two-cols
 layoutClass: gap-10
 ---
 
 ### 7.5.1.$y^{(n)}=f(x)$
+
 <v-click>
 
 等式两边对变量 $x$ 积分，得
@@ -543,12 +530,12 @@ $$y=\int y(x)\mathrm{d}x.$$
 </Admonition>
 
 ---
-level: 3
 layout: two-cols
 layoutClass: gap-10
 ---
 
 ### 7.5.2.不显含因变量 $y$
+
 $f(x,y',y'')=0$
 <div class="text-sm" v-click='4'>
 
@@ -660,7 +647,6 @@ $$y=x^3+3x+1.$$
 </v-click>
 
 ---
-level: 3
 layout: two-cols
 layoutClass: gap-10
 ---
@@ -801,8 +787,6 @@ layoutClass: gap-10
 </v-click>
 
 ---
-level: 2
----
 
 ## 7.6.线性微分方程解的结构
 
@@ -889,6 +873,7 @@ layoutClass: gap-10
 <v-click>
 
 #### 引入一些记号：
+
 1. 微分算子 $D$：$Df(x):=f'(x)$，则有 $D^2f(x)=f''(x)$；
 </v-click>
 
@@ -1371,6 +1356,8 @@ $u(x),v(x)$ 都是方程 $Ly=0$ 的解。
 ---
 layout: two-cols
 layoutClass: gap-10
+---
+
 
 **例子**
 
@@ -1576,6 +1563,7 @@ r_1r_2=q
 ---
 
 ### 7.8.3.非齐特解形式公式
+
 $$y''+py'+qy=\mathrm{e}^{\lambda x}P_m(x)$$
 
 <Admonition title='特解形式' admonitionType='error'>
