@@ -119,13 +119,6 @@ layout: two-cols
 layoutClass: gap-10
 ---
 
-1. 什么是高等数学
-
----
-layout: two-cols
-layoutClass: gap-10
----
-
 ### 0.1.1.绪论2
 
 <Admonition title='反函数的运算' admonitionType='warning'>
