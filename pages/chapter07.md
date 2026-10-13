@@ -1361,15 +1361,15 @@ layoutClass: gap-10
 
 **例子**
 
-**例 1** 求 $y''-2y'+3y=0$ 的解。
+**例 1** 求 $y''-2y'-3y=0$ 的解。
 <v-click at='1'>
 
-**解**：特征方程：$r^2-2r+3=0$，
+**解**：特征方程：$r^2-2r-3=0$，
 </v-click>
 
-<span v-click='2'>特征根：$r_1=1$，$r_1=3$，</span>
+<span v-click='2'>特征根：$r_1=-1$，$r_1=3$，</span>
 
-<span v-click='3'>通解：$y=C_1\mathrm{e}^x+C_2\mathrm{e}^{3x}$.</span>
+<span v-click='3'>通解：$y=C_1\mathrm{e}^{-x}+C_2\mathrm{e}^{3x}$.</span>
 
 <v-click at='4'>
 <hr>

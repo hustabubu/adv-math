@@ -68,6 +68,11 @@ hideInToc: true
 
 <Toc minDepth="1" maxDepth="1" columns="2" mode="all"></Toc>
 
+---
+src: ./pages/introduction.md
+---
+
+绪论插入页
 
 ---
 src: ./pages/chapter01.md

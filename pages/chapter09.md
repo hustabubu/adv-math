@@ -147,12 +147,81 @@ layoutClass: gap-10
 
 ## 7.4.多元复合函数求导法则
 
+**复合函数的求导步骤：**
+1. 梳理变量之间的依赖关系，画出**树状图**；
+2. 根据**链式法则**来求导。
+
+
+<Admonition title='链式法则' admonitionType='warning'>
+
+连接因变量和要求导的变量，
+
+<span v-mark.highlight.yellow="1">**分段相乘**</span>，<span v-mark.highlight.yellow="1">**分岔相加**</span>
+
+</Admonition>
+
 ---
 layout: two-cols
 layoutClass: gap-10
 ---
 
 ### 7.4.1.普通的复合函数求导法则
+
+**1. 一元函数与多元函数复合的情形**
+
+**定理 1** 如果函数 $u=g(t)$ 及 $v=h(t)$ 都在 $t$ 可导，函数 $z=f(u,v)$ 在对应的点 $(u,v)$ 具有连续的偏导数，那么复合函数 $z=f[g(t),h(t)]$ 在点 $t$ 可导，且
+$$
+\frac{\mathrm{d}z}{\mathrm{d}t}=\frac{\partial z}{\partial u}\frac{\mathrm{d}u}{\mathrm{d}t}+\frac{\partial z}{\partial v}\frac{\mathrm{d}v}{\mathrm{d}t}.
+$$
+
+::right::
+
+<RenderWhen context="visible">
+<div class="text-center">
+
+```mermaid
+flowchart TD
+    A("$$z$$") --- B("$$u$$") --- C("$$t$$")
+    A --- D("$$v$$") --- E("$$t$$")
+```
+</div>
+</RenderWhen>
+
+<span v-mark.highlight.yellow="1">**分段相乘**</span>，<span v-mark.highlight.yellow="1">**分岔相加**</span>
+
+---
+layout: two-cols
+layoutClass: gap-10
+---
+
+**2. 多元函数与多元函数复合的情形**
+
+定理 2 如果函数 $u=g(x,y)$ 及 $v=h(x,y)$ 都在 $(x,y)$ 具有对 $x$ 和 $y$ 的偏导数，函数 $z=f(u,v)$ 在对应的点 $(u,v)$ 具有连续的偏导数，那么复合函数 $z=f[g(x,y),h(x,y)]$ 在点 $(x,y)$ 的偏导数都存在，且
+$$
+\begin{align*}
+\frac{\partial z}{\partial x}&=\frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x},\\
+\frac{\partial z}{\partial y}&=\frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y}.
+\end{align*}
+$$
+
+::right::
+
+<RenderWhen context="visible">
+<div class="text-center">
+
+```mermaid
+flowchart TD
+    A("$$z$$") --- B("$$u$$") --- D("$$x$$")
+    B --- E("$$y$$")
+    A --- C("$$v$$") --- F("$$x$$")
+    C --- G("$$y$$")
+```
+</div>
+</RenderWhen>
+
+<span v-mark.highlight.yellow="1">**分段相乘**</span>，<span v-mark.highlight.yellow="1">**分岔相加**</span>
+
+<span v-click='2'>掌握链式法则，则任意的多元函数、任意多重的函数复合都迎刃而解。</span>
 
 ---
 layout: two-cols
